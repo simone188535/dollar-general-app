@@ -4,6 +4,8 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 <style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+
 .page-wrapper {
     padding: 0px;
 }
@@ -33,14 +35,37 @@ body {
 
 .hero-live-text {
     position: absolute;
+}
+
+.hero-live-text-p1 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 5rem;
     top: 35%;
     width: 500px;
     left: 5%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: Bold;
     /*font-size: calc(5rem - 100%)*/
 }
+
+.hero-live-text-p2 {
+    top: 20%;
+    right: 3%;
+    width: 250px;
+    /*font-size: 20px;*/
+}
+
+.sub-head-text-container {
+    font-size: 20px;
+}
+
+.sub-head-text-container div {
+    vertical-align: middle;
+}
+
+.bolded-span {
+    /*font-weight: bold;*/
 }
 
 .social-media {
@@ -86,6 +111,12 @@ h4 {
     color: #000000;
 }
 
+.header-logo {
+    display: inline-block;
+    width: 80px;
+    float: left;
+    margin-right: 5px;
+}
 
 .icon {
     margin: 0 auto;
@@ -95,6 +126,7 @@ h4 {
 .headline {
     margin-top: 30px;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 p {
@@ -121,20 +153,33 @@ p {
 }
 
 @media only screen and (max-width : 1200px) {
-    .hero-live-text {
+    .hero-live-text-p1 {
         font-size: 4rem;
+    }
+
+    .hero-live-text-p2 {
+        right: 3%;
+        width: 200px;
+    }
+
+    .sub-head-text-container {
+        font-size: 17px;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    .hero-live-text {
-        font-size: 3.5rem;
+    .hero-live-text-p1 {
+        font-size: 3.2rem;
     }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {}
+@media only screen and (max-width : 768px) {
+    .hero-live-text-p1 {
+        top: 17%;
+    }
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {}
@@ -189,16 +234,24 @@ p {
             <div class="mobile hero-mob">
                 <!-- <img src="https://s3.amazonaws.com/dgpr/landing-pages/app/update082619/mobile-hero_05.png" alt="" width="100%" />
                 <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android" title="Google Play" style="position: absolute; left: 6.2%; top: 30.01%; width: 19.2%; height: 6.2%; z-index: 2;"></a><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8" title="App Store" style="position: absolute; left: 26.6%; top: 29.87%; width: 21.6%; height: 6.93%; z-index: 2;"></a> -->
-                <img class="w-100" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/hero_banner_mobile.png"/>
+                <img class="w-100" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/hero_banner_mobile.png" />
             </div> <!-- end of mobile -->
-            <div class="hero-live-text">you're getting<br>an upgrade.</div>
+            <div class="hero-live-text hero-live-text-p1">you're getting<br>an upgrade.</div>
+            <div class="hero-live-text hero-live-text-p2">
+                <div class="hero-sub-head">
+                    <div class="sub-head-text-container">
+                        <div> <img class="img-responsive header-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_go.png" /> and <strong class="bolded-span">Cart Calculator</strong> are now available in the DG App.</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center headline">
                 <strong>
-                    <p>Key Features</p>
+                    <p>Now, more ways <br />
+                        to shop and save.</p>
                 </strong>
             </div>
         </div>
@@ -206,7 +259,7 @@ p {
     <div class="container">
         <div class="row">
             <div class="col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://s3.amazonaws.com/dgpr/landing-pages/app/update082619/appv2-mobile_list.png" alt="Weekly Ad">
+                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_01.jpg" alt="Weekly Ad">
                 <h4 class="text-center"><span style="font-weight:900;">Cart Calculator</span></h4>
                 <ul>
                     <li>Scan the items you want in store.</li>
@@ -216,7 +269,7 @@ p {
                 </p>
             </div>
             <div class="col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://s3.amazonaws.com/dgpr/landing-pages/app/update082619/appv2-mobile_06.png" alt="Digital Coupon">
+                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_02.jpg" alt="Digital Coupon">
                 <h4 class="text-center"><span style="font-weight:900;">Digital Coupons</span></h4>
                 <ul>
                     <li>Scan an item to search for available coupons.</li>
@@ -226,7 +279,7 @@ p {
                 </p>
             </div>
             <div class="col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://s3.amazonaws.com/dgpr/landing-pages/app/appv2-mobile_12.png" alt="Digital Coupon">
+                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_03.jpg" alt="Digital Coupon">
                 <h4 class="text-center"><span style="font-weight:900;">Shopping List</span></h4>
                 <ul>
                     <li>Search for items to add to your list.</li>
@@ -240,20 +293,20 @@ p {
     <div class="container">
         <div class="row">
             <div class="col-sm-offset-2 col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://s3.amazonaws.com/dgpr/landing-pages/app/update082619/appv2-mobile_list.png" alt="Weekly Ad">
+                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_04.jpg" alt="Weekly Ad">
                 <h4 class="text-center"><span style="font-weight:900;">Weekly Ads</span></h4>
                 <ul>
                     <li>Discover the week’s best deals at your local store.</li>
-                    <li>Scroll through a list view for easier  browsing.</li>
+                    <li>Scroll through a list view for easier browsing.</li>
                     <li>Filter deals within the list by category.</li>
                 </ul>
                 </p>
             </div>
             <div class="col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://s3.amazonaws.com/dgpr/landing-pages/app/update082619/appv2-mobile_06.png" alt="Digital Coupon">
+                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_05.jpg" alt="Digital Coupon">
                 <h4 class="text-center"><span style="font-weight:900;">
-                    DG GO!
-                </span></h4>
+                        DG GO!
+                    </span></h4>
                 <ul>
                     <li>Scan items as you shop.</li>
                     <li>Skip the checkout line and pay-in-app.</li>
@@ -262,7 +315,6 @@ p {
                 </ul>
                 </p>
             </div>
-            
         </div>
     </div>
     <div class="container">

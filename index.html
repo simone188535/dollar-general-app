@@ -6,6 +6,31 @@
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
 
+@font-face {
+  font-family: "GothamXNarrow Black";
+  src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Backtoschool/css/Gotham/GothamNarrow/GothamXNarrow-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GothamNarrow Medium";
+  src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Backtoschool/css/Gotham/GothamNarrow/GothamNarrow-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Halloween2019/fonts/Montserrat-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Halloween2019/fonts/Poppins-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Backtoschool/css/Gotham/Gotham-Medium.otf") format("opentype");
+}
+
 .page-wrapper {
     padding: 0px;
 }
@@ -44,7 +69,7 @@ body {
     top: 35%;
     width: 500px;
     left: 5%;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "GothamXNarrow Black";
     font-weight: Bold;
     /*font-size: calc(5rem - 100%)*/
 }
@@ -53,6 +78,7 @@ body {
     top: 20%;
     right: 3%;
     width: 250px;
+    font-family: "GothamNarrow Medium";
     /*font-size: 20px;*/
 }
 
@@ -67,10 +93,44 @@ body {
 .bolded-span {
     /*font-weight: bold;*/
 }
-
-.page-banner{
-    background-color: #4fc325;
+.vert-line{
+    width: 2px;
+    background-color: white;
+    height: 70%;
+    margin: 2% 0px;
 }
+.callout{
+    width: 100%;
+}
+.green-section{
+    width: 600px;
+    margin: 60px auto 0px;
+    height: 65px;
+    background-color: #4fc325;
+
+}
+.green-section div{
+    /*height: 18%;*/
+    color: white;
+    font-family: "GothamNarrow Medium";
+}
+.green-section #heads-up{
+    font-size: 35px;
+    font-style: italic;
+    padding: 1% 4%;
+    /*border-right: 5px solid white;*/
+}
+.green-section #dg-app-callout{
+    font-size: 18px;
+    padding: 1.5% 5%;
+    text-align: left;
+}
+
+.page-banner {
+    /*background-color: #4fc325;*/
+        float: left;
+}
+
 .social-media {
     position: relative;
     left: 25px;
@@ -193,15 +253,27 @@ p {
         left: 10%;
         font-size: 3.3rem;
     }
-     .hero-live-text-p2 {
+
+    .hero-live-text-p2 {
         right: 0%;
         left: 10%;
         top: 42%;
         /*width: 175px;*/
     }
+
     .sub-head-text-container {
         font-size: 20px;
     }
+    .green-section{
+        width: 97%;
+    }
+    .green-section #heads-up{
+            padding: 1% 2%;
+    }
+    .green-section #dg-app-callout{
+        padding: 1% 3%;
+    }
+
 }
 
 /* Extra Small Devices, Phones */
@@ -211,6 +283,16 @@ p {
 @media only screen and (max-width : 320px) {}
 
 /* mobile styles */
+@media screen and (max-width: 700px){
+
+    .green-section #dg-app-callout{
+        padding: 1% 3%;
+    }
+    .green-section #heads-up {
+    padding: 2% 1%;
+    font-size: 26px;
+}
+}
 @media screen and (min-width: 300px) and (max-width:768px) {
 
     .mobile {
@@ -275,17 +357,22 @@ p {
             </div> -->
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 text-center">
+    <div class="callout">
+       <!--  <div class="row"> -->
+            <!-- div class="col-sm-8 col-sm-offset-3 text-center"> -->
                 <!-- <strong>
                     <p>Now, more ways <br />
                         to shop and save.</p>
                 </strong> -->
-                <div class="col-xs-4 page-banner">Heads Up</div>
-                <div class="col-xs-8 page-banner">Heads Up</div>
-            </div>
-        </div>
+                                <div class="green-section">
+                    <div id="heads-up" class=" page-banner" >Heads Up</div>
+                    <div class="vert-line page-banner"></div>
+                   <!--  <div class="col-xs-1 page-banner"><hr width="1" size="100%"></div> -->
+                    <div id="dg-app-callout" class="page-banner">DG GO! is going away on 12/31/19, so get <br >the DG App now.</div>
+                </div>
+            
+            <!-- </div> -->
+      <!--   </div> -->
     </div>
     <div class="container">
         <div class="row">

@@ -106,11 +106,13 @@ body {
 }
 
 .vert-line {
+       background: white;
     width: 2px;
-    background-color: white;
     height: 70%;
-    margin: 2% 0px;
+    position: absolute;
+    margin-top: 2%;
 }
+
 
 .callout {
     width: 100%;
@@ -121,7 +123,15 @@ body {
     margin: 60px auto 0px;
     height: 65px;
     background-color: #4fc325;
+    display: table;
 
+}
+
+.green-section .tr{
+    display: table-row;
+}
+.green-section .td{
+    display: table-cell;
 }
 
 .green-section div {
@@ -140,20 +150,26 @@ body {
 .green-section #heads-up {
     font-size: 35px;
     font-style: italic;
-    padding: 1% 4%;
+   /* padding: 1% 4%;*/
     text-transform: uppercase;
+    width: 35%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0% 3%;
     /*border-right: 5px solid white;*/
 }
 
 .green-section #dg-app-callout {
     font-size: 18px;
-    padding: 1.5% 5%;
+    /*padding: 1.5% 2%;*/
+    padding: 0% 3%;
     text-align: left;
+    vertical-align: middle;
 }
 
 .page-banner {
     /*background-color: #4fc325;*/
-    float: left;
+   /* float: left;*/
 }
 
 .social-media {
@@ -282,6 +298,8 @@ p {
 .logo-block img {
     display: block;
     margin: 0 auto;
+        width: 160px;
+    height: 50px;
 }
 
 @media only screen and (max-width : 1300px) {
@@ -378,29 +396,13 @@ p {
     .green-section {
         width: 97%;
     }
-
     .green-section #heads-up {
-        padding: 1% 2%;
-    }
-
-    .green-section #dg-app-callout {
-        padding: 1% 3%;
-    }
+    font-size: 30px;
+}
 
 }
 
 /* mobile styles */
-@media screen and (max-width: 700px) {
-
-    .green-section #dg-app-callout {
-        padding: 2% 2%;
-    }
-
-    .green-section #heads-up {
-        padding: 3% 2%;
-        font-size: 26px;
-    }
-}
 
 @media screen and (min-width: 300px) and (max-width:768px) {
 
@@ -497,10 +499,17 @@ p {
         </div>
     </div>
     <div class="callout">
-        <div class="green-section">
-            <div id="heads-up" class=" page-banner">Heads Up</div>
-            <div class="vert-line page-banner"></div>
-            <div id="dg-app-callout" class="page-banner">DG GO! is going away on 12/31/19, so get <br>the DG App now.</div>
+        <div class="green-section position-rel">
+            <div class="tr">
+            <div id="heads-up" class=" td page-banner">Heads Up</div>
+            <div class="td page-banner">
+                <div class="tr">
+                    <div class="vert-line"></div>
+                </div>
+                
+            </div>
+            <div id="dg-app-callout" class="td page-banner">DG GO! is going away on 12/31/19, so get the DG App now.</div>
+            </div>
         </div>
     </div>
     <div class="container">

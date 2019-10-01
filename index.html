@@ -67,7 +67,7 @@ body {
     font-weight: bold;
     /*font-size: 5rem;*/
     top: 35%;
-    width: 500px;
+    /*width: 500px;*/
     left: 5%;
     font-family: "GothamXNarrow Black";
     font-weight: Bold;
@@ -176,13 +176,14 @@ body {
 }
 
 #add-app-desktop {
-        position: absolute;
+    position: absolute;
     font-size: 25px;
     margin-top: 10%;
     line-height: 1;
 
 }
-#add-app-desktop #first-app-img{
+
+#add-app-desktop #first-app-img {
     padding-right: 10%;
 }
 
@@ -193,7 +194,12 @@ body {
 /*#add-app-desktop img {
     width: 150px;
 }*/
-#add-app-desktop .add-app-logo{
+.add-app-logo-footer{
+        width: 160px;
+    height: 50px;
+    margin: 10px;
+}
+#add-app-desktop .add-app-logo {
     width: 150px;
     margin-top: 10%;
 }
@@ -302,10 +308,12 @@ p {
         width: 200px;
     }
 
-    .sub-head-text-container, #add-app-desktop  {
+    .sub-head-text-container,
+    #add-app-desktop {
         font-size: 20px;
     }
-    #add-app-desktop .add-app-logo{
+
+    #add-app-desktop .add-app-logo {
         width: 130px;
     }
 }
@@ -335,11 +343,16 @@ p {
         width: 175px;
     }
 
-     .sub-head-text-container, #add-app-desktop  {
+    #add-app-desktop{
+        margin-top: 4%;
+    }
+    .sub-head-text-container,
+    #add-app-desktop {
         font-size: 17px;
     }
-    .sub-head-text-container{
-            width: 180px;
+
+    .sub-head-text-container {
+        width: 180px;
     }
 }
 
@@ -376,17 +389,11 @@ p {
 
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {}
-
 /* mobile styles */
 @media screen and (max-width: 700px) {
 
     .green-section #dg-app-callout {
-        padding: 1% 2%;
+        padding: 2% 2%;
     }
 
     .green-section #heads-up {
@@ -427,6 +434,29 @@ p {
 
 
 }
+
+@media only screen and (max-width : 560px) {
+    .hero-live-text-p1{
+            left: 8%;
+    }
+    .hero-live-text-p2{
+        left: 8%;
+    }
+    .hero-live-text-p1 #line-2 {
+        font-size: 4.4rem;
+    }
+
+    .green-section #dg-app-callout {
+        font-size: 16px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}
 </style>
 </head>
 
@@ -550,8 +580,8 @@ p {
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
             </div>
             <div class="col-sm-4 col-xs-12 inline-img center-block">
-                <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"> <img src="https://s3.amazonaws.com/dgpr/landing-pages/app/googleplay-icon.png" alt="Google Play"></a>
-                <a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img src="https://s3.amazonaws.com/dgpr/landing-pages/app/appstore-icon.png" alt="App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"> <img class="add-app-logo-footer" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" alt="Google Play"></a>
+                <a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="add-app-logo-footer" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" alt="App Store"></a>
             </div>
             <div class="col-sm-4 col-xs-12">
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">

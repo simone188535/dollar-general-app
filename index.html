@@ -72,18 +72,19 @@ body {
     font-family: "GothamXNarrow Black";
     font-weight: Bold;
     /*font-size: calc(5rem - 100%)*/
-        line-height: 1;
+    line-height: 1;
 }
 
-.hero-live-text-p1 #line-1{
-     font-size: 7rem;
+.hero-live-text-p1 #line-1 {
+    font-size: 7rem;
 }
-.hero-live-text-p1 #line-2{
-     font-size: 9rem;
+
+.hero-live-text-p1 #line-2 {
+    font-size: 9rem;
 }
 
 .hero-live-text-p2 {
-    top: 20%;
+    top: 19%;
     right: 3%;
     width: 250px;
     font-family: "GothamNarrow Medium";
@@ -91,7 +92,9 @@ body {
 }
 
 .sub-head-text-container {
-    font-size: 20px;
+    font-size: 25px;
+    width: 200px;
+    line-height: 1.2;
 }
 
 .sub-head-text-container div {
@@ -126,9 +129,10 @@ body {
     color: white;
     font-family: "GothamNarrow Medium";
 }
-.app-headline{
-        font-family: "GothamNarrow Medium";
-   /* font-size: 30px;*/
+
+.app-headline {
+    font-family: "GothamNarrow Medium";
+    /* font-size: 30px;*/
     font-weight: bold;
     /*margin: 30px 0 5px;*/
 }
@@ -170,24 +174,36 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-#add-app-desktop{
-    position: absolute;
-    font-size: 20px;
-    top: 35%;
-    right: 10%;
-   
+
+#add-app-desktop {
+        position: absolute;
+    font-size: 25px;
+    margin-top: 10%;
+    line-height: 1;
+
 }
-#add-app-desktop strong{
+#add-app-desktop #first-app-img{
+    padding-right: 10%;
+}
+
+#add-app-desktop strong {
     margin-bottom: 10px;
 }
-#add-app-desktop img{
+
+/*#add-app-desktop img {
     width: 150px;
+}*/
+#add-app-desktop .add-app-logo{
+    width: 150px;
+    margin-top: 10%;
 }
-#add-app-mobile{
-     font-size: 30px;
-     margin: 30px 0 5px;
-   /* font-family: "GothamNarrow Medium";*/
+
+#add-app-mobile {
+    font-size: 30px;
+    margin: 30px 0 5px;
+    /* font-family: "GothamNarrow Medium";*/
 }
+
 /*.container-fluid div {
     position: relative;
 }*/
@@ -253,48 +269,78 @@ p {
     padding-right: 0px;
 }
 
-.logo-block{
+.logo-block {
     padding: 5px;
 }
-.logo-block img{
-        display: block;
+
+.logo-block img {
+    display: block;
     margin: 0 auto;
 }
+
+@media only screen and (max-width : 1300px) {
+    .hero-live-text-p1 #line-1 {
+        font-size: 5.2rem;
+    }
+
+    .hero-live-text-p1 #line-2 {
+        font-size: 7.2rem;
+    }
+}
+
 @media only screen and (max-width : 1200px) {
-    .hero-live-text-p1 #line-1{
-     font-size: 5.5rem;
-}
-.hero-live-text-p1 #line-2{
-     font-size: 7.5rem;
-}
+    .hero-live-text-p1 #line-1 {
+        font-size: 5rem;
+    }
+
+    .hero-live-text-p1 #line-2 {
+        font-size: 7rem;
+    }
 
     .hero-live-text-p2 {
         right: 4%;
         width: 200px;
     }
 
-    .sub-head-text-container {
-        font-size: 17px;
+    .sub-head-text-container, #add-app-desktop  {
+        font-size: 20px;
+    }
+    #add-app-desktop .add-app-logo{
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width : 1030px) {
+    .hero-live-text-p1 #line-1 {
+        font-size: 4.7rem;
+    }
+
+    .hero-live-text-p1 #line-2 {
+        font-size: 6.7rem;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-        .hero-live-text-p1 #line-1{
-     font-size: 5rem;
-}
-.hero-live-text-p1 #line-2{
-     font-size: 7rem;
-}
+    .hero-live-text-p1 #line-1 {
+        font-size: 3.3rem;
+    }
+
+    .hero-live-text-p1 #line-2 {
+        font-size: 5.3rem;
+    }
 
     .hero-live-text-p2 {
         right: 2%;
         width: 175px;
     }
 
-    /*.sub-head-text-container {
+     .sub-head-text-container, #add-app-desktop  {
         font-size: 17px;
-    }*/
+    }
+    .sub-head-text-container{
+            width: 180px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -388,33 +434,26 @@ p {
     <div class="container-fluid">
         <div class="row position-rel">
             <div class="desktop hero-desktop">
-                <!--  <img src="https://s3.amazonaws.com/dgpr/landing-pages/app/update082619/desktop-hero_07.png" alt="" width="100%" />
-                <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android" title="Google Play" style="position: absolute; left: 72.58%; top: 67.7%; width: 8.8%; height: 7.9%; z-index: 2;"></a><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8" title="App Store" style="position: absolute; left: 81.86%; top: 68.69%; width: 10.03%; height: 7.05%; z-index: 2;"></a> -->
                 <img class="w-100" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/hero_banner_desktop.png">
             </div> <!-- end of desktop -->
             <div class="mobile hero-mob">
-                <!-- <img src="https://s3.amazonaws.com/dgpr/landing-pages/app/update082619/mobile-hero_05.png" alt="" width="100%" />
-                <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android" title="Google Play" style="position: absolute; left: 6.2%; top: 30.01%; width: 19.2%; height: 6.2%; z-index: 2;"></a><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8" title="App Store" style="position: absolute; left: 26.6%; top: 29.87%; width: 21.6%; height: 6.93%; z-index: 2;"></a> -->
                 <img class="w-100" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/hero_banner_mobile.png" />
             </div> <!-- end of mobile -->
             <div class="hero-live-text hero-live-text-p1">
-            <div id="line-1">you're getting</div>
-            <div id="line-2">an upgrade.</div>
+                <div id="line-1">you're getting</div>
+                <div id="line-2">an upgrade.</div>
             </div>
             <div class="hero-live-text hero-live-text-p2">
                 <div class="hero-sub-head">
                     <div class="sub-head-text-container">
-                        <div> <img class="img-responsive header-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_go.png" /> and <br /><strong>Cart Calculator</strong> are now available in the DG App.</div>
+                        <div> <img class="img-responsive header-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_go.png" /> and <br /><strong>Cart&nbsp;Calculator</strong> are now available in the DG App.</div>
                     </div>
-                    <!-- <div class="sub-head-text-container">
-                        <strong>Download.<br> Shop. Save.</strong>
-                    </div> -->
+                    <div id="add-app-desktop" class="app-headline desktop">
+                        <strong>Download. <br>Shop. Save.</strong>
+                        <div><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img id="first-app-img" class="img-responsive add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" /></a></div>
+                        <div><a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"><img class="img-responsive add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" /></a></div>
+                    </div>
                 </div>
-            </div>
-            <div id="add-app-desktop" class="app-headline desktop">
-                <strong>Download. <br>Shop. Save.</strong>
-                <div><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="img-responsive" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png"/></a></div>
-                <div><a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"><img class="img-responsive" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" /></a></div>
             </div>
         </div>
     </div>
@@ -424,7 +463,7 @@ p {
         </div>
         <div class="row">
             <div class="col-xs-4 col-xs-offset-2 logo-block"><a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"><img class="img-responsive" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" /></a></div>
-            <div class="col-xs-4 logo-block"><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="img-responsive" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png"/></a></div>
+            <div class="col-xs-4 logo-block"><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="img-responsive" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" /></a></div>
         </div>
     </div>
     <div class="callout">

@@ -92,9 +92,10 @@ body {
 }
 
 .sub-head-text-container {
-    font-size: 25px;
+    font-size: 21px;
     width: 200px;
     line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sub-head-text-container div {
@@ -106,7 +107,7 @@ body {
 }
 
 .vert-line {
-       background: white;
+    background: white;
     width: 2px;
     height: 70%;
     position: absolute;
@@ -127,10 +128,11 @@ body {
 
 }
 
-.green-section .tr{
+.green-section .tr {
     display: table-row;
 }
-.green-section .td{
+
+.green-section .td {
     display: table-cell;
 }
 
@@ -150,7 +152,7 @@ body {
 .green-section #heads-up {
     font-size: 35px;
     font-style: italic;
-   /* padding: 1% 4%;*/
+    /* padding: 1% 4%;*/
     text-transform: uppercase;
     width: 35%;
     text-align: center;
@@ -169,7 +171,7 @@ body {
 
 .page-banner {
     /*background-color: #4fc325;*/
-   /* float: left;*/
+    /* float: left;*/
 }
 
 .social-media {
@@ -204,19 +206,29 @@ body {
 }
 
 #add-app-desktop strong {
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
+    font-family: "Montserrat Bold";
 }
 
 /*#add-app-desktop img {
     width: 150px;
 }*/
-.add-app-logo-footer{
-        width: 160px;
+.add-app-logo {
+    width: 160px;
     height: 50px;
     margin: 10px;
 }
+
 #add-app-desktop .add-app-logo {
-    width: 150px;
+    width: 160px;
+    margin: 10px 10px 10px 0px;
+    /* margin-top: 10%; */
+    height: auto;
+    /* margin-top: 10%;*/
+}
+
+#add-app-desktop #first-element {
+
     margin-top: 10%;
 }
 
@@ -257,6 +269,10 @@ h4 {
     margin-right: 5px;
 }
 
+.sub-head-text-container strong {
+    font-family: "Montserrat Bold";
+}
+
 .icon {
     margin: 0 auto;
     display: block;
@@ -295,12 +311,12 @@ p {
     padding: 5px;
 }
 
-.logo-block img {
+/*.logo-block img {
     display: block;
     margin: 0 auto;
         width: 160px;
     height: 50px;
-}
+}*/
 
 @media only screen and (max-width : 1300px) {
     .hero-live-text-p1 #line-1 {
@@ -357,20 +373,26 @@ p {
     }
 
     .hero-live-text-p2 {
-        right: 2%;
+        /*right: 3.5%;*/
         width: 175px;
+        right: 2.5%;
     }
 
-    #add-app-desktop{
+    #add-app-desktop {
         margin-top: 4%;
     }
+
     .sub-head-text-container,
     #add-app-desktop {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .sub-head-text-container {
         width: 180px;
+    }
+
+    #add-app-desktop #first-element {
+        margin-top: 5%;
     }
 }
 
@@ -396,9 +418,10 @@ p {
     .green-section {
         width: 97%;
     }
+
     .green-section #heads-up {
-    font-size: 30px;
-}
+        font-size: 30px;
+    }
 
 }
 
@@ -438,14 +461,20 @@ p {
 }
 
 @media only screen and (max-width : 560px) {
-    .hero-live-text-p1{
-            left: 8%;
-    }
-    .hero-live-text-p2{
+    .hero-live-text-p1 {
         left: 8%;
     }
+
+    .hero-live-text-p2 {
+        left: 8%;
+    }
+
     .hero-live-text-p1 #line-2 {
         font-size: 4.4rem;
+    }
+
+    .green-section #heads-up {
+        font-size: 25px;
     }
 
     .green-section #dg-app-callout {
@@ -454,8 +483,45 @@ p {
 
 }
 
+@media only screen and (max-width : 500px) {
+    .hero-live-text-p1 #line-1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-live-text-p1 #line-2 {
+        font-size: 3.5rem;
+    }
+
+    .sub-head-text-container {
+        font-size: 16px;
+        width: 150px;
+    }
+
+}
+
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {}
+@media only screen and (max-width : 480px) {
+    .hero-live-text-p1 {
+        left: 6%;
+    }
+
+    .hero-live-text-p2 {
+        left: 6%;
+    }
+
+    .hero-live-text-p1 #line-1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-live-text-p1 #line-2 {
+        font-size: 3rem;
+    }
+
+    /*.sub-head-text-container{
+        font-size: 16px;
+        width: 150px;
+    }*/
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {}
@@ -482,7 +548,7 @@ p {
                     </div>
                     <div id="add-app-desktop" class="app-headline desktop">
                         <strong>Download. <br>Shop. Save.</strong>
-                        <div><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img id="first-app-img" class="img-responsive add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" /></a></div>
+                        <div id="first-element"><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img id="first-app-img" class="img-responsive add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" /></a></div>
                         <div><a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"><img class="img-responsive add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" /></a></div>
                     </div>
                 </div>
@@ -494,21 +560,28 @@ p {
             <div id="add-app-mobile" class="col-xs-12 text-center app-headline">Download. Shop. Save.</div>
         </div>
         <div class="row">
-            <div class="col-xs-4 col-xs-offset-2 logo-block"><a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"><img class="img-responsive" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" /></a></div>
-            <div class="col-xs-4 logo-block"><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="img-responsive" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" /></a></div>
+            <div class="col-sm-4 col-xs-12">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+            </div>
+            <div class="col-sm-4 col-xs-12 inline-img center-block">
+                <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"> <img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" alt="Google Play"></a>
+                <a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" alt="App Store"></a>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+            </div>
         </div>
     </div>
     <div class="callout">
         <div class="green-section position-rel">
             <div class="tr">
-            <div id="heads-up" class=" td page-banner">Heads Up</div>
-            <div class="td page-banner">
-                <div class="tr">
-                    <div class="vert-line"></div>
+                <div id="heads-up" class=" td page-banner">Heads Up</div>
+                <div class="td page-banner">
+                    <div class="tr">
+                        <div class="vert-line"></div>
+                    </div>
                 </div>
-                
-            </div>
-            <div id="dg-app-callout" class="td page-banner">DG GO! is going away on 12/31/19, so get the DG App now.</div>
+                <div id="dg-app-callout" class="td page-banner">DG GO! is going away on 12/31/19, so get the DG App now.</div>
             </div>
         </div>
     </div>
@@ -589,8 +662,8 @@ p {
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
             </div>
             <div class="col-sm-4 col-xs-12 inline-img center-block">
-                <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"> <img class="add-app-logo-footer" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" alt="Google Play"></a>
-                <a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="add-app-logo-footer" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" alt="App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"> <img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" alt="Google Play"></a>
+                <a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" alt="App Store"></a>
             </div>
             <div class="col-sm-4 col-xs-12">
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">

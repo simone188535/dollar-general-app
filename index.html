@@ -47,7 +47,9 @@
 body {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+.app-page{
+    color: #121212;
+}
 .position-rel {
     position: relative;
 }
@@ -102,6 +104,7 @@ body {
     vertical-align: middle;
 }
 
+
 .bolded-span {
     /*font-weight: bold;*/
 }
@@ -143,7 +146,7 @@ body {
 }
 
 .app-headline {
-    font-family: "GothamNarrow Medium";
+        font-family: "Montserrat Bold";
     /* font-size: 30px;*/
     font-weight: bold;
     /*margin: 30px 0 5px;*/
@@ -235,7 +238,6 @@ body {
 #add-app-mobile {
     font-size: 30px;
     margin: 30px 0 5px;
-    /* font-family: "GothamNarrow Medium";*/
 }
 
 /*.container-fluid div {
@@ -253,13 +255,13 @@ body {
 
 .headline p {
     font-family: 'Poppins', sans-serif !important;
-    color: #000000;
     font-size: 42px;
+    line-height: 36px;
 }
 
 h4 {
     font-family: 'Poppins', sans-serif !important;
-    color: #000000;
+    color: #121212;
 }
 
 .header-logo {
@@ -276,6 +278,8 @@ h4 {
 .icon {
     margin: 0 auto;
     display: block;
+    width: 60px;
+    height: 60px;
 }
 
 .headline {
@@ -284,9 +288,6 @@ h4 {
     text-transform: uppercase;
 }
 
-p {
-    color: #575757;
-}
 
 .content-app {
     font-family: 'Poppins', sans-serif !important;
@@ -420,9 +421,10 @@ p {
         margin: 0px auto 0px;
 
     }
+
     .inline-img {
         margin-bottom: 40px;
-    }  
+    }
 
     .green-section #heads-up {
         font-size: 30px;
@@ -501,7 +503,8 @@ p {
         font-size: 16px;
         width: 150px;
     }
-    #add-app-mobile{
+
+    #add-app-mobile {
         font-size: 25px;
     }
 
@@ -537,144 +540,146 @@ p {
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row position-rel">
-            <div class="desktop hero-desktop">
-                <img class="w-100" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/hero_banner_desktop.png">
-            </div> <!-- end of desktop -->
-            <div class="mobile hero-mob">
-                <img class="w-100" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/hero_banner_mobile.png" />
-            </div> <!-- end of mobile -->
-            <div class="hero-live-text hero-live-text-p1">
-                <div id="line-1">you're getting</div>
-                <div id="line-2">an upgrade.</div>
-            </div>
-            <div class="hero-live-text hero-live-text-p2">
-                <div class="hero-sub-head">
-                    <div class="sub-head-text-container">
-                        <div> <img class="img-responsive header-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_go.png" /> and <br /><strong>Cart&nbsp;Calculator</strong> are now available in the DG App.</div>
-                    </div>
-                    <div id="add-app-desktop" class="app-headline desktop">
-                        <strong>Download. <br>Shop. Save.</strong>
-                        <div id="first-element"><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img id="first-app-img" class="img-responsive add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" /></a></div>
-                        <div><a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"><img class="img-responsive add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" /></a></div>
+    <div class="app-page">
+        <div class="container-fluid">
+            <div class="row position-rel">
+                <div class="desktop hero-desktop">
+                    <img class="w-100" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/hero_banner_desktop.jpg">
+                </div> <!-- end of desktop -->
+                <div class="mobile hero-mob">
+                    <img class="w-100" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/hero_banner_mobile.jpg" />
+                </div> <!-- end of mobile -->
+                <div class="hero-live-text hero-live-text-p1">
+                    <div id="line-1">you're getting</div>
+                    <div id="line-2">an upgrade.</div>
+                </div>
+                <div class="hero-live-text hero-live-text-p2">
+                    <div class="hero-sub-head">
+                        <div class="sub-head-text-container">
+                            <div> <img class="img-responsive header-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_go.png" /> and <br /><strong>Cart&nbsp;Calculator</strong> are now available in the DG App.</div>
+                        </div>
+                        <div id="add-app-desktop" class="app-headline desktop">
+                            <strong>Download. <br>Shop. Save.</strong>
+                            <div id="first-element"><a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img id="first-app-img" class="img-responsive add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" /></a></div>
+                            <div><a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"><img class="img-responsive add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" /></a></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container mobile">
-        <div class="row">
-            <div id="add-app-mobile" class="col-xs-12 text-center app-headline">Download. Shop. Save.</div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-xs-12">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+        <div class="container mobile">
+            <div class="row">
+                <div id="add-app-mobile" class="col-xs-12 text-center app-headline">Download. Shop. Save.</div>
             </div>
-            <div class="col-sm-4 col-xs-12 inline-img center-block">
-                <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"> <img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" alt="Google Play"></a>
-                <a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" alt="App Store"></a>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-            </div>
-        </div>
-    </div>
-    <div class="callout">
-        <div class="green-section position-rel">
-            <div class="tr">
-                <div id="heads-up" class=" td page-banner">Heads Up</div>
-                <div class="td page-banner">
-                    <div class="tr">
-                        <div class="vert-line"></div>
-                    </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
                 </div>
-                <div id="dg-app-callout" class="td page-banner">DG GO! is going away on 12/31/19, so get the DG App now.</div>
+                <div class="col-sm-4 col-xs-12 inline-img center-block">
+                    <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"> <img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" alt="Google Play"></a>
+                    <a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" alt="App Store"></a>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center headline">
-                <strong>
-                    <p>Now, more ways <br />
-                        to shop and save.</p>
-                </strong>
+        <div class="callout">
+            <div class="green-section position-rel">
+                <div class="tr">
+                    <div id="heads-up" class=" td page-banner">Heads Up</div>
+                    <div class="td page-banner">
+                        <div class="tr">
+                            <div class="vert-line"></div>
+                        </div>
+                    </div>
+                    <div id="dg-app-callout" class="td page-banner">DG GO! app is going away on 12/31/19, so get the DG App now.</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_01.jpg" alt="Weekly Ad">
-                <h4 class="text-center"><span style="font-weight:900;">Cart Calculator</span></h4>
-                <ul>
-                    <li>Scan the items you want in store.</li>
-                    <li>Add coupons for instant savings.</li>
-                    <li>See a running total of your cart to stay on budget.</li>
-                </ul>
-                </p>
-            </div>
-            <div class="col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_02.jpg" alt="Digital Coupon">
-                <h4 class="text-center"><span style="font-weight:900;">Digital Coupons</span></h4>
-                <ul>
-                    <li>Scan an item to search for available coupons.</li>
-                    <li>Sort and filter to find what you need most.</li>
-                    <li>Access hundreds of dollars in savings every week.</li>
-                </ul>
-                </p>
-            </div>
-            <div class="col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_03.jpg" alt="Digital Coupon">
-                <h4 class="text-center"><span style="font-weight:900;">Shopping List</span></h4>
-                <ul>
-                    <li>Search for items to add to your list.</li>
-                    <li>Find coupons and offers for the products you need.</li>
-                    <li>Know your estimated total before going to the store.</li>
-                </ul>
-                </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center headline">
+                    <strong>
+                        <p>Now, more ways <br />
+                            to shop and save.</p>
+                    </strong>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-offset-2 col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_04.jpg" alt="Weekly Ad">
-                <h4 class="text-center"><span style="font-weight:900;">Weekly Ads</span></h4>
-                <ul>
-                    <li>Discover the week’s best deals at your local store.</li>
-                    <li>Scroll through a list view for easier browsing.</li>
-                    <li>Filter deals within the list by category.</li>
-                </ul>
-                </p>
-            </div>
-            <div class="col-sm-4 col-xs-12 content-app">
-                <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_05.jpg" alt="Digital Coupon">
-                <h4 class="text-center"><span style="font-weight:900;">
-                        DG GO!
-                    </span></h4>
-                <ul>
-                    <li>Scan items as you shop.</li>
-                    <li>Skip the checkout line and pay-in-app.</li>
-                    <li>For a limited time, save 10% when you shop with DG GO!</li>
-                    <div>*Select stores only </div>
-                </ul>
-                </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12 content-app">
+                    <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_01.jpg" alt="Weekly Ad">
+                    <h4 class="text-center"><span style="font-weight:900;">Cart Calculator</span></h4>
+                    <ul>
+                        <li>Scan the items you want in store.</li>
+                        <li>Add coupons for instant savings.</li>
+                        <li>See a running total of your cart to stay on budget.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-sm-4 col-xs-12 content-app">
+                    <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_02.jpg" alt="Digital Coupon">
+                    <h4 class="text-center"><span style="font-weight:900;">Digital Coupons</span></h4>
+                    <ul>
+                        <li>Scan an item to search for available coupons.</li>
+                        <li>Sort and filter to find what you need most.</li>
+                        <li>Access hundreds of dollars in savings every week.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-sm-4 col-xs-12 content-app">
+                    <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_03.jpg" alt="Digital Coupon">
+                    <h4 class="text-center"><span style="font-weight:900;">Shopping List</span></h4>
+                    <ul>
+                        <li>Search for items to add to your list.</li>
+                        <li>Find coupons and offers for the products you need.</li>
+                        <li>Know your estimated total before going to the store.</li>
+                    </ul>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 col-xs-12">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-4 col-xs-12 content-app">
+                    <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_04.jpg" alt="Weekly Ad">
+                    <h4 class="text-center"><span style="font-weight:900;">Weekly Ads</span></h4>
+                    <ul>
+                        <li>Discover the week’s best deals at your local store.</li>
+                        <li>Scroll through a list view for easier browsing.</li>
+                        <li>Filter deals within the list by category.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-sm-4 col-xs-12 content-app">
+                    <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_05.jpg" alt="Digital Coupon">
+                    <h4 class="text-center"><span style="font-weight:900;">
+                            DG GO!
+                        </span></h4>
+                    <ul>
+                        <li>Scan items as you shop.</li>
+                        <li>Skip the checkout line and pay-in-app.</li>
+                        <li>For a limited time, save 10% when you shop with DG GO!</li>
+                        <div>*Select stores only </div>
+                    </ul>
+                    </p>
+                </div>
             </div>
-            <div class="col-sm-4 col-xs-12 inline-img center-block">
-                <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"> <img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" alt="Google Play"></a>
-                <a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" alt="App Store"></a>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                </div>
+                <div class="col-sm-4 col-xs-12 inline-img center-block">
+                    <a href="https://play.google.com/store/apps/details?id=com.dollargeneral.android"> <img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/Google.png" alt="Google Play"></a>
+                    <a href="https://itunes.apple.com/us/app/dollar-general/id561311442?ls=1&mt=8"><img class="add-app-logo" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/App_Store.png" alt="App Store"></a>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                </div>
             </div>
         </div>
     </div>

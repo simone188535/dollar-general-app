@@ -16,10 +16,6 @@
     src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Backtoschool/css/Gotham/GothamNarrow/GothamNarrow-Medium.woff") format("woff");
 }
 
-@font-face {
-    font-family: "Montserrat Bold";
-    src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Halloween2019/fonts/Montserrat-Bold.otf") format("opentype");
-}
 
 @font-face {
     font-family: "Poppins SemiBold";
@@ -29,6 +25,15 @@
 @font-face {
     font-family: "Gotham Medium";
     src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Backtoschool/css/Gotham/Gotham-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Gotham Bold";
+    src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Backtoschool/css/Gotham/Gotham-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Gotham Book";
+    src: url("https://dgpr.s3.amazonaws.com/landing-pages/seasonal/Backtoschool/css/Gotham/Gotham-Book.otf") format("opentype");
 }
 
 .page-wrapper {
@@ -92,6 +97,9 @@ body {
     font-family: "GothamNarrow Medium";
     /*font-size: 20px;*/
 }
+.col-sub-text{
+     font-family: "Gotham Bold";
+}
 
 .sub-head-text-container {
     font-size: 21px;
@@ -142,18 +150,18 @@ body {
 .green-section div {
     /*height: 18%;*/
     color: white;
-    font-family: "GothamNarrow Medium";
+    font-family: "Gotham Book";
 }
 
 .app-headline {
-        font-family: "Montserrat Bold";
+        font-family: "Gotham Bold";
     /* font-size: 30px;*/
     font-weight: bold;
     /*margin: 30px 0 5px;*/
 }
 
 .green-section #heads-up {
-    font-size: 35px;
+    font-size: 30px;
     font-style: italic;
     /* padding: 1% 4%;*/
     text-transform: uppercase;
@@ -162,14 +170,16 @@ body {
     vertical-align: middle;
     padding: 0% 3%;
     /*border-right: 5px solid white;*/
+    font-family: "Gotham Bold";
 }
 
 .green-section #dg-app-callout {
     font-size: 18px;
     /*padding: 1.5% 2%;*/
-    padding: 0% 3%;
+   padding: 1.5% 3%;
     text-align: left;
     vertical-align: middle;
+
 }
 
 .page-banner {
@@ -210,7 +220,7 @@ body {
 
 #add-app-desktop strong {
     /*margin-bottom: 10px;*/
-    font-family: "Montserrat Bold";
+    font-family: "Gotham Bold";
 }
 
 /*#add-app-desktop img {
@@ -272,7 +282,7 @@ h4 {
 }
 
 .sub-head-text-container strong {
-    font-family: "Montserrat Bold";
+    font-family: "Gotham Bold";
 }
 
 .icon {
@@ -283,14 +293,16 @@ h4 {
 }
 
 .headline {
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 30px;
     text-transform: uppercase;
 }
 
 
 .content-app {
-    font-family: 'Poppins', sans-serif !important;
+    /*font-family: 'Poppins', sans-serif !important;*/
+    font-family: "Gotham Book";
+    font-weight: bold;
     margin-bottom: 40px;
     line-height: 1.8;
     font-size: 16px;
@@ -593,7 +605,7 @@ h4 {
                             <div class="vert-line"></div>
                         </div>
                     </div>
-                    <div id="dg-app-callout" class="td page-banner">DG GO! app is going away on 12/31/19, so get the DG App now.</div>
+                    <div id="dg-app-callout" class="td page-banner">The <i>DG GO!</i> app is going away on 12/31/19, so get the DG App now.</div>
                 </div>
             </div>
         </div>
@@ -611,7 +623,7 @@ h4 {
             <div class="row">
                 <div class="col-sm-4 col-xs-12 content-app">
                     <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_01.jpg" alt="Weekly Ad">
-                    <h4 class="text-center"><span style="font-weight:900;">Cart Calculator</span></h4>
+                    <h4 class="text-center"><span class="col-sub-text">Cart Calculator</span></h4>
                     <ul>
                         <li>Scan the items you want in store.</li>
                         <li>Add coupons for instant savings.</li>
@@ -621,7 +633,7 @@ h4 {
                 </div>
                 <div class="col-sm-4 col-xs-12 content-app">
                     <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_02.jpg" alt="Digital Coupon">
-                    <h4 class="text-center"><span style="font-weight:900;">Digital Coupons</span></h4>
+                    <h4 class="text-center"><span class="col-sub-text">Digital Coupons</span></h4>
                     <ul>
                         <li>Scan an item to search for available coupons.</li>
                         <li>Sort and filter to find what you need most.</li>
@@ -631,7 +643,7 @@ h4 {
                 </div>
                 <div class="col-sm-4 col-xs-12 content-app">
                     <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_03.jpg" alt="Digital Coupon">
-                    <h4 class="text-center"><span style="font-weight:900;">Shopping List</span></h4>
+                    <h4 class="text-center"><span class="col-sub-text">Shopping List</span></h4>
                     <ul>
                         <li>Search for items to add to your list.</li>
                         <li>Find coupons and offers for the products you need.</li>
@@ -645,7 +657,7 @@ h4 {
             <div class="row">
                 <div class="col-sm-offset-2 col-sm-4 col-xs-12 content-app">
                     <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_04.jpg" alt="Weekly Ad">
-                    <h4 class="text-center"><span style="font-weight:900;">Weekly Ads</span></h4>
+                    <h4 class="text-center"><span class="col-sub-text">Weekly Ads</span></h4>
                     <ul>
                         <li>Discover the week’s best deals at your local store.</li>
                         <li>Scroll through a list view for easier browsing.</li>
@@ -655,7 +667,7 @@ h4 {
                 </div>
                 <div class="col-sm-4 col-xs-12 content-app">
                     <img class="icon" src="https://dgpr.s3.amazonaws.com/landing-pages/app/app-merge/dg_logos_05.jpg" alt="Digital Coupon">
-                    <h4 class="text-center"><span style="font-weight:900;">
+                    <h4 class="text-center"><span class="col-sub-text">
                             DG GO!
                         </span></h4>
                     <ul>

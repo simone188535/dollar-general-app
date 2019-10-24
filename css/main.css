@@ -75,13 +75,10 @@ body {
 .hero-live-text-p1 {
     text-transform: uppercase;
     font-weight: bold;
-    /*font-size: 5rem;*/
     top: 35%;
-    /*width: 500px;*/
     left: 5%;
     font-family: "GothamXNarrow Black";
     font-weight: bold;
-    /*font-size: calc(5rem - 100%)*/
     line-height: 1;
 }
 
@@ -98,7 +95,6 @@ body {
     right: 3%;
     width: 250px;
     font-family: "GothamNarrow Medium";
-    /*font-size: 20px;*/
 }
 .col-sub-text{
      font-family: "Gotham Bold" ,'Poppins';
@@ -117,9 +113,9 @@ body {
 }
 
 
-.bolded-span {
-    /*font-weight: bold;*/
-}
+/*.bolded-span {
+    font-weight: bold;
+}*/
 
 .vert-line {
     background: white;
@@ -152,34 +148,28 @@ body {
 }
 
 .green-section div {
-    /*height: 18%;*/
     color: white;
     font-family: "Gotham Book";
 }
 
 .app-headline {
-        font-family: "Gotham Bold" ,'Poppins';
-    /* font-size: 30px;*/
+    font-family: "Gotham Bold" ,'Poppins';
     font-weight: bold;
-    /*margin: 30px 0 5px;*/
 }
 
 .green-section #heads-up {
     font-size: 30px;
     font-style: italic;
-    /* padding: 1% 4%;*/
     text-transform: uppercase;
     width: 35%;
     text-align: center;
     vertical-align: middle;
     padding: 0% 3%;
-    /*border-right: 5px solid white;*/
     font-family: "Gotham Bold" ,'Poppins';
 }
 
 .green-section #dg-app-callout {
     font-size: 18px;
-    /*padding: 1.5% 2%;*/
    padding: 1.5% 3%;
     text-align: left;
     vertical-align: middle;
@@ -223,13 +213,10 @@ body {
 }
 
 #add-app-desktop strong {
-    /*margin-bottom: 10px;*/
     font-family: "Gotham Bold" ,'Poppins';
 }
 
-/*#add-app-desktop img {
-    width: 150px;
-}*/
+
 .add-app-logo {
     width: 160px;
     height: 50px;
@@ -239,9 +226,7 @@ body {
 #add-app-desktop .add-app-logo {
     width: 160px;
     margin: 10px 10px 10px 0px;
-    /* margin-top: 10%; */
     height: auto;
-    /* margin-top: 10%;*/
 }
 
 #add-app-desktop #first-element {
@@ -304,7 +289,6 @@ h4 {
 
 
 .content-app {
-    /*font-family: 'Poppins', sans-serif !important;*/
     font-family: "Gotham Book";
     font-weight: bold;
     margin-bottom: 40px;
@@ -328,12 +312,6 @@ h4 {
     padding: 5px;
 }
 
-/*.logo-block img {
-    display: block;
-    margin: 0 auto;
-        width: 160px;
-    height: 50px;
-}*/
 
 @media only screen and (max-width : 1300px) {
     .hero-live-text-p1 #line-1 {
@@ -425,7 +403,6 @@ h4 {
         right: 0%;
         left: 10%;
         top: 42%;
-        /*width: 175px;*/
     }
 
     .sub-head-text-container {
@@ -543,11 +520,6 @@ h4 {
     .hero-live-text-p1 #line-2 {
         font-size: 3rem;
     }
-
-    /*.sub-head-text-container{
-        font-size: 16px;
-        width: 150px;
-    }*/
 }
 
 /* Custom, iPhone Retina */
